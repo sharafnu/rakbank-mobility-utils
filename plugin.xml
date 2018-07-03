@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="rakbank-mobility-utils" version="1.0.0">
+   <name>RAKBANK Mobility Utils</name>
+   <description />
+   <author>Sharaf</author>
+   <license>RAKBANK Internal</license>
+   <keywords />
+   <!--  android  -->
+   <platform name="android">
+      <js-module src="www/plugin.js" name="plugin">
+         <runs />
+         <!-- This is the window variable name you want, like window.MobilityUtils -->
+         <clobbers target="MobilityUtils" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+         <feature name="MobilityUtils">
+            <param name="android-package" value="com.rakbank.mobility.MobilityUtils" />
+            <param name="onload" value="true" />
+         </feature>
+      </config-file>
+      <source-file src="src/android/com/rakbank/mobility/MobilityUtils.java" target-dir="src/com/rakbank/mobility" />
+   </platform>
+   <!--  ios  -->
+   <platform name="ios">
+      <js-module src="www/plugin.js" name="plugin">
+         <runs />
+         <clobbers target="MobilityUtils" />
+      </js-module>
+      <config-file target="config.xml" parent="/*">
+         <feature name="MobilityUtils">
+            <param name="ios-package" value="MobilityUtils" onload="true" />
+         </feature>
+      </config-file>
+      <header-file src="src/ios/MobilityUtils.h" />
+      <source-file src="src/ios/MobilityUtils.m" />
+   </platform>
+
+   <hook type="after_prepare" src="hooks/after_prepare.js" />
+   
+</plugin>
