@@ -1,6 +1,6 @@
 module.exports = function(context) {
 
-    var path              = crequire('path'),
+    var path              = require('path'),
         fs                = require('fs'),
         crypto            = require('crypto'),
         Q                 = require('q'),
