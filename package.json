@@ -9,7 +9,7 @@
         ]
     },
     "dependencies": {
-        "path": "0.17.7",
+        "path": "0.12.7",
         "q": "1.5.1"
     },
     "description": "This plugin holds utility functions for RAKBANK internal mobility apps"
