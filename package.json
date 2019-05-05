@@ -1,12 +1,16 @@
 {
-  "name": "rakbank-mobility-utils",
-  "version": "1.0.0",
-  "cordova": {
-    "id": "rakbank-mobility-utils",
-    "platforms": [
-      "android",
-      "ios"
-    ]
-  },
-  "description": "This plugin holds utility functions for RAKBANK internal mobility apps"
+    "name": "rakbank-mobility-utils",
+    "version": "1.0.1",
+    "cordova": {
+        "id": "rakbank-mobility-utils",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "dependencies": {
+        "path": "0.17.7",
+        "q": "1.5.1"
+    },
+    "description": "This plugin holds utility functions for RAKBANK internal mobility apps"
 }
